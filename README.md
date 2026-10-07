@@ -111,5 +111,3 @@ Key skills reflected:
 - KPI creation using DAX measures
 - Business-focused dashboard layout & design
 - Actionable operational and sales insights generation
-
-📬 **GitHub:** Explore more of my projects in my repository!
