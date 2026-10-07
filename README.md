@@ -1,225 +1,104 @@
-🍕 Pizza Sales Performance Dashboard
-An end-to-end Pizza Sales Analytics project built using SQL and Microsoft Power BI to analyze revenue, orders, pizza sales, customer ordering patterns, product performance, and sales trends.
+📊 Pizza Sales Analytics Dashboard – Power BI & SQL
+This project demonstrates an end-to-end data analytics workflow, starting from data querying and aggregation in PostgreSQL to interactive visualization and business intelligence in Microsoft Power BI.
 
-The project demonstrates how transactional sales data can be transformed into meaningful business insights through SQL analysis, data modeling, DAX, and interactive Power BI visualizations.
+Rather than just presenting a flat report, this project extracts actionable operational and sales insights using robust SQL queries and a polished Power BI dashboard.
 
-📊 Dashboard Preview
-!Pizza Sales Performance Dashboard
-
-🎯 Project Objective
-The main objective of this project is to analyze pizza sales data and provide a clear overview of business performance.
-
-The analysis focuses on:
-
-Revenue performance
-Order volume
-Pizza quantity sold
-Average Order Value
-Average pizzas per order
-Pizza category performance
-Pizza size performance
-Daily and monthly sales trends
-Top and bottom performing pizzas
 🚀 Project Workflow
-Raw Sales Data
-      ↓
-Data Cleaning & Preparation
-      ↓
-SQL Analysis
-      ↓
-KPI & Business Metrics
-      ↓
-Power BI Data Modeling
-      ↓
-DAX Measures
-      ↓
-Interactive Dashboard
-      ↓
-Business Insights
-🛠️ Tools & Technologies
-SQL – Data querying, aggregation and business analysis
-Microsoft Power BI – Dashboard development and visualization
-Power Query – Data transformation and preparation
-DAX – KPI and analytical calculations
-CSV Dataset – Source transactional data
-📌 Key KPIs
-KPI	Value
-💰 Total Revenue	$817.62K
-🧾 Total Orders	21,334
-🍕 Total Pizzas Sold	49,559
-🛒 Average Order Value	$38.32
-🍕 Average Pizzas Per Order	2.32
-📊 Dashboard Analysis
-💰 Revenue Analysis
-The dashboard tracks overall revenue performance and monthly revenue trends to understand how sales change throughout the year.
+The project follows a practical analytics pipeline:
 
-It helps identify:
+1️⃣ Raw Pizza Sales Dataset & PostgreSQL Database
 
-High-performing months
-Low-performing months
-Revenue fluctuations
-Overall sales patterns
-🧾 Order Analysis
-Order-level analysis provides insights into customer purchasing behavior.
+2️⃣ Data Extraction & Exploratory SQL Queries
 
-The dashboard analyzes:
+3️⃣ Data Modeling & DAX Measures in Power BI
 
-Total orders
-Orders by day of week
-Monthly order trends
-Average pizzas purchased per order
-🍕 Pizza Category Analysis
-Sales are analyzed across four major pizza categories:
+4️⃣ Interactive Pizza Sales Analytics Dashboard
 
-Classic
-Supreme
-Chicken
-Veggie
-This helps identify which categories contribute most significantly to overall sales.
+🗄️ Database & SQL Analysis
+Before building the dashboard, the underlying relational data was explored and queried using PostgreSQL to extract core performance metrics:
 
-📦 Pizza Size Analysis
-The dashboard compares sales across different pizza sizes:
+Calculating total revenue, total orders, and average order value.
 
-Small
-Medium
-Large
-X-Large
-XX-Large
-This provides insight into customer preferences and size-wise revenue contribution.
+Analyzing peak sales hours and busy days of the week.
 
-🏆 Product Performance
-Pizza-level analysis identifies the best and worst-performing products based on:
+Determining category-wise and size-wise sales percentages.
 
-Revenue
-Quantity sold
-Number of orders
-🥇 Top Pizza by Revenue
-The Thai Chicken Pizza
+Identifying top-selling and bottom-performing pizzas.
 
-🥇 Top Pizza by Orders
-The Classic Deluxe Pizza
+📊 Dashboard Overview
+The Power BI dashboard provides a comprehensive look into restaurant sales performance, tracking key business metrics:
 
-🥇 Top Pizza by Quantity Sold
-The Classic Deluxe Pizza
+Overall Revenue & Sales Trends
 
-⚠️ Lowest Performing Pizza
-The Brie Carre Pizza
+Order Volume & Average Order Value (AOV)
 
-🗄️ SQL Analysis
-SQL was used as the primary analytical layer to extract business insights from the raw pizza sales dataset.
+Product-level performance (Category & Size breakdowns)
 
-The analysis covers:
+Customer purchasing habits across days and times
 
-Total Revenue
-Total Orders
-Total Pizzas Sold
-Average Order Value
-Average Pizzas Per Order
-Daily Order Trends
-Monthly Order Trends
-Revenue by Pizza Category
-Revenue by Pizza Size
-Quantity Sold by Category
-Top 5 Pizzas by Revenue
-Bottom 5 Pizzas by Revenue
-Top 5 Pizzas by Quantity
-Bottom 5 Pizzas by Quantity
-Top 5 Pizzas by Orders
-Bottom 5 Pizzas by Orders
-📂 SQL Queries
-All SQL queries used for this project are available separately in:
+🔹 High-Level KPIs
+Total Revenue: $817,860.05
 
-SQL/Pizza_Sales_SQL_Queries.sql
+Total Orders: 21,350
 
-This keeps the README focused on the project, dashboard, insights, and business impact while the complete SQL implementation remains available for technical reference.
+Total Pizzas Sold: 49,574
 
-💡 Key Business Insights
-🍕 Product Insights
-The Thai Chicken Pizza generated the highest revenue.
-The Classic Deluxe Pizza was one of the strongest products based on orders and quantity sold.
-The Brie Carre Pizza appeared among the weakest-performing products.
-📅 Time-Based Insights
-Revenue varies considerably across different months.
-Customer order volume changes throughout the week.
-Thursday recorded one of the highest order volumes.
-📦 Size Insights
-Large pizzas represent a significant portion of overall sales.
-Medium and Large sizes have strong customer demand.
-Smaller and extra-large sizes contribute comparatively less.
-🏷️ Category Insights
-Different pizza categories contribute differently to overall revenue, making category-level analysis useful for menu optimization and promotional planning.
+Average Order Value (AOV): $38.31
 
-🎯 Business Recommendations
-Based on the analysis, the following strategies can be considered:
+Average Pizzas Per Order: 2.32
 
-1. Promote High-Performing Pizzas
-Focus marketing campaigns and combo offers on pizzas that generate high revenue and order volumes.
+📈 Key Insights
+✔ Peak Ordering Times: Highest order volume is concentrated during Friday and Saturday evenings (dinner rush hours).
 
-2. Review Low-Performing Products
-Low-performing pizzas can be evaluated based on pricing, customer preferences, ingredients, and menu placement.
+✔ Top Revenue Categories: The Classic and Supreme pizza categories generate the highest total revenue share.
 
-3. Optimize Promotions
-Use daily and monthly sales trends to run targeted promotions during slower sales periods.
+✔ Size Preferences: Large size pizzas account for the majority of total sales volume compared to Medium and Small sizes.
 
-4. Focus on Popular Sizes
-Create combo and family offers around the pizza sizes with the highest demand.
+✔ Best/Worst Sellers: The Thai Chicken Pizza drives high revenue, while certain specialty options record lower periodic demand.
 
-5. Improve Menu Strategy
-Combine revenue, quantity, and order metrics to identify products that are both popular and commercially valuable.
+📊 Dashboard Sections
+✅ Daily Trend for Total Orders
+Tracks order fluctuations across days of the week to pinpoint peak operational days.
 
-📁 Project Structure
-Pizza-Sales-Analysis/
-│
-├── 📊 Dashboard/
-│   └── Pizza_Sales_Dashboard.pbix
-│
-├── 🗄️ SQL/
-│   └── Pizza_Sales_SQL_Queries.sql
-│
-├── 📁 Dataset/
-│   └── pizza_sales.csv
-│
-├── 🖼️ dashboard.png
-│
-└── 📄 README.md
-🧠 Skills Demonstrated
-SQL
+✅ Hourly Trend for Total Orders
+Highlights rush hours throughout the day to help optimize kitchen staffing and inventory prep.
+
+✅ Percentage of Sales by Pizza Category
+Breaks down revenue share across Classic, Veggie, Supreme, and Chicken categories.
+
+✅ Percentage of Sales by Pizza Size
+Compares sales distribution across Small, Medium, Large, and XL/XXL sizes.
+
+✅ Total Pizzas Sold by Category
+Shows overall volume demand per product category.
+
+✅ Top & Bottom 5 Best Sellers
+Identifies the most and least popular pizzas by revenue, quantity, and total orders.
+
+🛠 Tools & Technologies
+PostgreSQL (Data querying & aggregation)
+
 Microsoft Power BI
-Power Query
-DAX
-Data Cleaning
-Data Transformation
-Data Modeling
-KPI Development
-Data Visualization
-Sales Analysis
-Trend Analysis
-Product Performance Analysis
-Business Intelligence
-Business Insight Generation
-📈 Project Highlights
-Area	Analysis
-Revenue	Total & monthly revenue trends
-Orders	Total & daily/monthly orders
-Products	Top & bottom performing pizzas
-Category	Category-wise sales contribution
-Size	Size-wise sales contribution
-Customer Behavior	Average pizzas per order
-KPIs	Revenue, orders, quantity & AOV
-👩‍💻 Author
+
+Power Query & DAX
+
+Data Modeling & Visual Storytelling
+
+👨‍💻 Author & Project Context
 Yusra Alam
-Aspiring Data Analyst passionate about turning raw data into meaningful business insights using:
 
-SQL • Power BI • Python • Excel • Data Analytics
+This project is part of my data science and analytics portfolio, demonstrating an end-to-end analytics workflow combining relational databases with business intelligence tools.
 
-⭐ If You Found This Project Useful
-If you found this project helpful, consider giving the repository a ⭐ Star.
+Key skills reflected:
 
-🍕 Project Summary
-Project Type: Sales & Business Intelligence Analytics Domain: Food & Beverage Tools: SQL, Power BI, Power Query, DAX Focus: Revenue Analysis • Sales Trends • Product Performance • Customer Ordering Behavior • Business Insights
+Advanced SQL querying & data aggregation
 
-Ab ye wala README portfolio ke liye sahi hai: README mein story + dashboard + KPIs + insights hain, aur poori SQL queries separate .sql file mein.
+Data modeling and relationship management in Power BI
 
+KPI creation using DAX measures
 
-ChatGPT is AI and can make mistakes.
+Business-focused dashboard layout & design
 
+Actionable operational and sales insights generation
+
+📬 GitHub: Explore more of my projects in my repository!
